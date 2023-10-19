@@ -1,8 +1,9 @@
-let name = "sujith";
-let age = '30';
+const person = {
+    name: 'sujith',
+    age: 30,
+    greet() {
+        console.log('Hi, I am ' + this.name)
+    }
+};
 
-const summarizeUser = (userName,  userAge) => {
-    return 'The user ' + userName + ' is with age '+ userAge;
-}
-
-console.log(summarizeUser(name, age));
+person.greet();
